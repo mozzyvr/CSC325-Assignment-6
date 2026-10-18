@@ -1,14 +1,11 @@
 import math
 
-RIGHT_ANGLE_REL_TOL=1e-9
-
 def is_valid_triangle(a: float, b: float, c: float) -> bool:
     """Return whether three side lengths form a non-degenerate triangle."""
     if a <= 0 or b <= 0 or c <= 0:
         return False
 
     return a + b > c and a + c > b and b + c > a
-
 
 def classify_triangle(a: float, b: float, c: float) -> str:
     """Classify a triangle by side lengths and, when applicable, its right angle."""
@@ -24,8 +21,7 @@ def classify_triangle(a: float, b: float, c: float) -> str:
         classification = "Scalene"
 
     if classification != "Equilateral" and math.isclose(
-        sides[2] ** 2, sides[0] ** 2 + sides[1] ** 2, rel_tol=RIGHT_ANGLE_REL_TOL
-    ):
+        sides[2] ** 2, sides[0] ** 2 + sides[1] ** 2):
         return f"Right {classification}"
 
     return classification
