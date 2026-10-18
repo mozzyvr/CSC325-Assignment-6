@@ -65,3 +65,5 @@ python -m pytest -v
 | GitHub Copilot Chat | Used to draft descriptive failures for each written pytest | Verified that each one correctly matches each test case I wrote |
 | GitHub Copilot | Used to draft README test instructions for Powershell users | Verified that the commands are accurate |
 | GitHub Copilot | Drafted equivalence classes and boundaries based on written test cases | Edited and verified that all equivalance tests and boundaries are correct |
+
+**No AI was used for part 3**
