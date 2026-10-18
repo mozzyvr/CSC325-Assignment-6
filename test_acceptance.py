@@ -10,6 +10,6 @@ def test_buildable_triangle():
 def test_unbuildable_triangle():
     assert classify_triangle(1, 2, 10) == "Invalid", "Triangle is unbuildable"
 
-# Flag right triangles since they do not need reinforced corners
+# Flag right triangles since they need reinforced corners
 def test_flag_right_triangle():
     assert classify_triangle(3, 4, 5) == "Right Scalene", "Flagged: Right angle pieces need reinforced corners"
